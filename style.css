@@ -3,40 +3,25 @@ body {
     padding: 0;
 }
 
-.main-container {
-    display: flex;
-    height: 100vh;
-    width: 100vw;
-    flex-direction: column;
+.container {
+    margin: 0 auto;
 }
 
-.flex-container {
-    display: flex;
-    flex-direction: row;
-    flex-grow: 1;
+@media all and (max-width: 479px) {
+    .container {
+        width: 100%;
+    }
 }
 
-.col {
-    flex-grow: 1;
-}
-
-.blue {
-    background-color: cadetblue;
-    flex-grow: 0.33;
-}
-
-.coral {
-    background-color: lightcoral;
-    flex-grow: 0.77;
+@media all and (min-width: 480px) and (max-width: 719px) {
+    .container {
+        width: 90%;
+    }
 
 }
 
-.gray {
-    background-color: lightslategray;
-    flex-grow: 0.33;
-}
-
-.green {
-    background-color: lightseagreen;
-    flex-grow: 0.77;
+@media all and (min-width: 720px) {
+    .container {
+        width: 600px;
+    }
 }
